@@ -1,0 +1,33 @@
+// Colors
+$grey-light: #f9f9f9;
+$grey-medium: #eee;
+$color-normal: #e1e1e1;
+$grey-dark: #6c6c6c;
+$antracite: #393939;
+$black: #000;
+$shadow: rgba($black, .1);
+$white: #fff;
+$red: #f36e4e;
+$blue: #289bc7;
+$green: #41aea5;
+$color-sec-light: $grey-light;
+$color-sec-medium: $grey-medium;
+$color-sec-dark: $grey-dark;
+$color-prim-txt: $antracite;
+$color-back: $white;
+$color-line: $color-normal;
+$color-visual: $red;
+$color-ux: $blue;
+$color-frontend: $green;
+$color-shadow: $shadow;
+// Fonts
+$font-stack: 'Open Sans',
+sans-serif;
+// Fontsizes
+$root-font-size: 15;
+// Paths
+$path-img: '../images';
+// Media queries
+$brk-small: '(max-width: 767px)';
+$brk-medium: '(min-width: 768px)';
+$brk-large: '(min-width: 1024px)';

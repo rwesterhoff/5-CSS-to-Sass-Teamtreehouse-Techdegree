@@ -1,0 +1,187 @@
+// Fontsizes
+@mixin font-size($size) {
+    font-size: #{$size}px;
+    font-size: ($size / $root-font-size) + rem;
+}
+
+// Breakpoints
+@mixin brk-points($section) {
+    @if $section=='nav' {
+        @media screen and #{$brk-medium} {
+            padding-top: 50px;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .student-name {
+                margin-bottom: 25px;
+            }
+            ul {
+                display: flex;
+            }
+            ul li {
+                justify-content: center;
+                background-color: transparent;
+                padding: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 0px;
+            }
+            a {
+                display: inline;
+            }
+        }
+        @media screen and #{$brk-large} {
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            ul {
+                margin-top: -18px;
+            }
+            ul li {
+                margin-left: 40px;
+                padding-right: 0;
+                padding-left: 0;
+                border-bottom: 3px solid transparent;
+
+            }
+            li:hover {
+                color: inherit;
+                border-bottom: 3px solid $color-sec-dark;
+                background-color: inherit;
+            }
+        }
+    }
+    @else if $section=='skills' {
+        @media screen and #{$brk-medium} {
+            ul li {
+                position: relative;
+                left: 12.5%;
+                display: inline-block;
+                float: left;
+                width: 25%;
+                margin-bottom: 0;
+            }
+        }
+        @media screen and #{$brk-large} {
+            ul li {
+                padding-top: 55px;
+                border-radius: 5px 5px 0 0;
+            }
+        }
+    }
+    @else if $section=='portfolio' {
+        @media screen and #{$brk-medium} {
+            padding-bottom: 5px;
+            .container {
+                padding-top: 45px;
+                padding-bottom: 60px;
+            }
+        }
+        @media screen and #{$brk-large} {
+            padding-top: 55px;
+            padding-right: 22px;
+            padding-left: 22px;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0 3px $color-shadow;
+            .section-headline {
+                margin-bottom: 55px;
+            }
+        }
+    }
+    @else if $section=='contact' {
+        @media screen and #{$brk-medium} {
+            padding-right: 110px;
+            padding-left: 110px;
+            .section-headline {
+                margin-bottom: 45px;
+            }
+            p {
+                margin-bottom: 45px;
+            }
+            address {
+                margin-bottom: 5px;
+            }
+            p,
+            address {
+                @include font-size(20);
+            }
+        }
+        @media screen and #{$brk-large} {
+            padding-right: 210px;
+            padding-left: 210px;
+            .section-headline {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    @else if $section=='footer' {
+        @media screen and #{$brk-medium} {
+            padding-bottom: 85px;
+            ul li {
+                margin-left: 30px;
+            }
+        }
+        @media screen and #{$brk-large} {
+            padding-bottom: 25px;
+        }
+    }
+    @else if $section=='intro' {
+        @media screen and #{$brk-medium} {
+            margin: 0 0 25px 0;
+            padding-top: 45px;
+            padding-bottom: 20px;
+            .intro-text {
+                float: left;
+                text-align: left;
+                max-width: 60%;
+                padding-right: 10px;
+                @include font-size(20);
+            }
+        }
+        @media screen and #{$brk-large} {
+            padding-top: 5px;
+            padding-bottom: 60px;
+            margin-bottom: 0;
+            img {
+                margin: 0;
+            }
+            .intro-text {
+                padding-right: 40px;
+            }
+        }
+    }
+    @else if $section=='cards' {
+        @media screen and #{$brk-medium} {
+            padding-bottom: 25px;
+            float: left;
+            max-width: calc(50% - 6px);
+            &:nth-child(odd) {
+                margin-right: 6px;
+            }
+            &:nth-child(even) {
+                margin-left: 6px;
+            }
+            p {
+                padding: 0 37px;
+            }
+        }
+        @media screen and #{$brk-large} {
+            max-width: calc((100% / 3) - 16px);
+            margin-left: 8px;
+            margin-right: 8px;
+            min-height: 410px;
+            .card-excerpt {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            a:hover {
+                transform: scale(1.01);
+                background-color: $color-sec-light;
+                box-shadow: 0 3px rgba(0, 0, 0, 0.1);
+                height: 100% !important;
+            }
+        }
+    }
+}

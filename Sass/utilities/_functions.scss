@@ -1,0 +1,9 @@
+@function rem($size) {
+  $remSize: $size / $root-font-size;
+  @return #{$remSize}rem;
+}
+
+@function px($size) {
+  $pxSize: $size;
+  @return #{$pxSize}px;
+}

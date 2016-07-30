@@ -1,0 +1,18 @@
+/* RESETS =================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.main-nav,
+.footer-nav,
+.portfolio-section,
+.skills-section {
+    ul {
+        list-style: none;
+    }
+}

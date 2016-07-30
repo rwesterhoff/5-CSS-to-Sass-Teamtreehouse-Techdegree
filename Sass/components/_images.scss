@@ -1,0 +1,18 @@
+/* IMAGES =================== */
+
+img {
+    max-width: 100%;
+    &.profile-picture {
+        max-width: 200px;
+        margin-bottom: 15px;
+    }
+    &.card-thumb {
+        margin-bottom: 15px;
+    }
+    @media screen and #{$brk-large} {
+        &.profile-picture {
+            float: right;
+            max-width: 40%;
+        }
+    }
+}

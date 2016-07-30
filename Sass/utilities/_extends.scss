@@ -1,0 +1,24 @@
+// Font
+%base-font {
+    font-style: normal;
+    font-weight: 300;
+}
+
+%small-font {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+// Margins
+%base-margin-btm {
+    margin-bottom: 30px;
+}
+
+%medium-margin-btm {
+    margin-bottom: 45px;
+}
+
+%clean-links {
+    text-decoration: none;
+    color: inherit;
+}

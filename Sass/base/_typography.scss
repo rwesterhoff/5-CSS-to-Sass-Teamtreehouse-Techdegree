@@ -1,0 +1,95 @@
+/* TYPOGRAPHY =================== */
+
+
+/* Base font */
+
+html {
+    font-family: $font-stack;
+    font-size: #{$root-font-size}px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: #{$root-font-size}px;
+    line-height: 1.55;
+    color: $color-prim-txt;
+}
+
+
+/* Paragraph and address text */
+
+p,
+address {
+    @extend %base-font;
+}
+
+
+/* Phone and email text */
+
+.address-emphasis {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    margin-left: 10px;
+    &:first-child {
+        margin-bottom: 15px;
+    }
+}
+
+
+/* H2 headlines */
+
+h2,
+.section-headline {
+    @extend %small-font;
+    @include font-size(14);
+}
+
+
+/* H3 headlines */
+
+h3,
+.card-headline {
+    @include font-size(18);
+    font-weight: normal;
+}
+
+
+/* All menu links */
+
+.main-nav,
+.footer-nav,
+.portfolio-overview {
+    a {
+        @extend %clean-links;
+    }
+}
+
+.main-nav,
+.footer-nav {
+    a {
+        @extend %small-font;
+    }
+}
+
+.main-nav a {
+    @include font-size(14);
+}
+
+.footer-nav {
+    @include font-size(10);
+    a {
+        @include font-size(12);
+    }
+}
+
+
+/* Larger texts like intros */
+
+.content-intro p,
+.contact-section p,
+.contact-section address {
+    @include font-size(16);
+}

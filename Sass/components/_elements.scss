@@ -1,0 +1,107 @@
+/* ELEMENTS =================== */
+
+
+/* Mobile menu button */
+
+.menu-toggle {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto -15px;
+    padding: 5px;
+    .hamburger-icon {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        &-line {
+            width: 100%;
+            height: 3px;
+            margin-bottom: 5px;
+            transition: all .1s;
+            background-color: $color-sec-dark;
+        }
+    }
+    &.clicked {
+        margin-bottom: 25px;
+        .hamburger-icon-line {
+            margin: 0;
+        }
+        .hamburger-icon-line:nth-child(1) {
+            transform: rotate(45deg);
+        }
+        .hamburger-icon-line:nth-child(2) {
+            display: none;
+        }
+        .hamburger-icon-line:nth-child(3) {
+            margin-top: -3px;
+            transform: rotate(-45deg);
+        }
+    }
+    @media screen and #{$brk-medium} {
+        display: none;
+    }
+}
+
+
+/* Mobile menu */
+
+.menu-closed {
+    display: none;
+}
+
+
+/* Intro */
+
+.content-intro {
+    margin: 25px 0 45px 0;
+    @include brk-points(intro);
+}
+
+
+/* Portfolio-card */
+
+.portfolio-card {
+    margin-bottom: 10px;
+    @include brk-points(cards);
+    // min-height: 480px;
+    a {
+        display: block;
+        padding-bottom: 20px;
+        transition: all .2s;
+        h3,
+        .card-headline {
+            margin-bottom: 12px;
+        }
+        > p {
+            margin-bottom: 15px;
+            padding: 0 40px;
+        }
+        .card-skills-set {
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+        }
+        .card-skills {
+            font-weight: bold;
+            display: inline-block;
+            margin: 1px;
+            padding: 2px 4px;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            border: 1px solid;
+            border-radius: 2px;
+            @include font-size(9);
+        }
+        .card-skill-visual {
+            color: $color-visual;
+            border-color: $color-visual;
+        }
+        .card-skill-ux {
+            color: $color-ux;
+            border-color: $color-ux;
+        }
+        .card-skill-frontend {
+            color: $color-frontend;
+            border-color: $color-frontend;
+        }
+    }
+}

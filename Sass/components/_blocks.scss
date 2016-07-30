@@ -1,0 +1,123 @@
+/* BLOCKS =================== */
+
+
+/* Navigation */
+
+.main-nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include brk-points(nav);
+    .student-name {
+        margin-bottom: 20px;
+    }
+    ul li {
+        max-width: 100%;
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+    a {
+        display: block;
+    }
+    @media screen and #{$brk-small} {
+        ul li {
+            background-color: $color-back;
+        }
+    }
+}
+
+
+/* Skills section */
+
+.skills-section {
+    padding-top: 45px;
+    padding-bottom: 55px;
+    border-radius: 0;
+    background-color: $color-sec-medium;
+    @include brk-points(skills);
+    .section-headline {
+        @extend %medium-margin-btm;
+    }
+    ul li {
+        padding: 0 20px;
+        @extend %base-margin-btm;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .skill-thumb {
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            border: none;
+            border-radius: 50%;
+        }
+        h3 {
+            margin-bottom: 10px;
+        }
+        #thumb-visual {
+            background-color: $color-visual;
+            background-image: url(#{$path-img}/skills-thumb-icon_visual.svg);
+        }
+        #thumb-ux {
+            background-color: $color-ux;
+            background-image: url(#{$path-img}/skills-thumb-icon_ux.svg);
+        }
+        #thumb-frontend {
+            background-color: $color-frontend;
+            background-image: url(#{$path-img}/skills-thumb-icon_frontend.svg);
+        }
+    }
+}
+
+
+/* Portfolio section */
+
+.portfolio-section {
+    padding-top: 45px;
+    padding-bottom: 30px;
+    border-radius: 0;
+    background-color: $color-back;
+    @include brk-points(portfolio);
+    .section-headline {
+        @extend %medium-margin-btm;
+    }
+}
+
+
+/* Contact section  */
+
+.contact-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include brk-points(contact);
+    .section-headline {
+        @extend %base-margin-btm;
+    }
+    p {
+        @extend %base-margin-btm;
+    }
+}
+
+
+/* Footer section */
+
+.footer-nav,
+.footer-nav ul {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.footer-nav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid $color-line;
+    @include brk-points(footer);
+    li,
+    ul li {
+        margin-left: 30px;
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+}
