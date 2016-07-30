@@ -353,13 +353,13 @@ img {
       margin-bottom: 10px; }
     .skills-section ul li #thumb-visual {
       background-color: #f36e4e;
-      background-image: url(../images/skills-thumb-icon_visual.svg); }
+      background-image: url(../Images/skills-thumb-icon_visual.svg); }
     .skills-section ul li #thumb-ux {
       background-color: #289bc7;
-      background-image: url(../images/skills-thumb-icon_ux.svg); }
+      background-image: url(../Images/skills-thumb-icon_ux.svg); }
     .skills-section ul li #thumb-frontend {
       background-color: #41aea5;
-      background-image: url(../images/skills-thumb-icon_frontend.svg); }
+      background-image: url(../Images/skills-thumb-icon_frontend.svg); }
 
 /* Portfolio section */
 .portfolio-section {
