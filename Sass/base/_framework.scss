@@ -2,18 +2,19 @@
 
 body {
     background-color: $color-sec-light;
-    @media screen and #{$brk-large} {
+    @include brk-points(desktop) {
         width: 100%;
         max-width: 964px;
         margin: 0 auto;
     }
 }
 
+
 /* Container */
 
 .container {
     padding: 0 15px;
-    @media screen and #{$brk-medium} {
+    @include brk-points(tablet) {
         padding: 0 30px;
     }
 }
@@ -23,14 +24,14 @@ body {
 
 .mobile-hide {
     display: none;
-    @media screen and #{$brk-medium} {
+    @include brk-points(tablet) {
         display: block;
     }
 }
 
 .tablet-hide {
     display: block;
-    @media screen and #{$brk-medium} {
+    @include brk-points(tablet) {
         display: none;
     }
 }

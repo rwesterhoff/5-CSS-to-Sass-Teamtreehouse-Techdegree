@@ -1,6 +1,6 @@
 /* COLUMNS =================== */
 
-@media screen and #{$brk-medium} {
+@include brk-points(tablet) {
     .row:before,
     .row:after {
         content: "";

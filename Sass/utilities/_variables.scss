@@ -28,6 +28,6 @@ $root-font-size: 15;
 // Paths
 $path-img: '../Images';
 // Media queries
-$brk-small: '(max-width: 767px)';
-$brk-medium: '(min-width: 768px)';
-$brk-large: '(min-width: 1024px)';
+$brk-small: 767px;
+$brk-medium: 768px;
+$brk-large: 1024px;

@@ -36,7 +36,7 @@
             transform: rotate(-45deg);
         }
     }
-    @media screen and #{$brk-medium} {
+    @include brk-points(tablet) {
         display: none;
     }
 }
@@ -53,7 +53,29 @@
 
 .content-intro {
     margin: 25px 0 45px 0;
-    @include brk-points(intro);
+    @include brk-points(tablet) {
+        margin: 0 0 25px 0;
+        padding-top: 45px;
+        padding-bottom: 20px;
+        .intro-text {
+            float: left;
+            text-align: left;
+            max-width: 60%;
+            padding-right: 10px;
+            @include font-size(20);
+        }
+    }
+    @include brk-points(desktop) {
+        padding-top: 5px;
+        padding-bottom: 60px;
+        margin-bottom: 0;
+        img {
+            margin: 0;
+        }
+        .intro-text {
+            padding-right: 40px;
+        }
+    }
 }
 
 
@@ -61,7 +83,36 @@
 
 .portfolio-card {
     margin-bottom: 10px;
-    @include brk-points(cards);
+    @include brk-points(tablet) {
+        padding-bottom: 25px;
+        float: left;
+        max-width: calc(50% - 6px);
+        &:nth-child(odd) {
+            margin-right: 6px;
+        }
+        &:nth-child(even) {
+            margin-left: 6px;
+        }
+        p {
+            padding: 0 37px;
+        }
+    }
+    @include brk-points(desktop) {
+        max-width: calc((100% / 3) - 16px);
+        margin-left: 8px;
+        margin-right: 8px;
+        min-height: 410px;
+        .card-excerpt {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        a:hover {
+            transform: scale(1.01);
+            background-color: $color-sec-light;
+            box-shadow: 0 3px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+    }
     // min-height: 480px;
     a {
         display: block;

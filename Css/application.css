@@ -44,7 +44,7 @@ h2,
 /* FRAMEWORK =================== */
 body {
   background-color: #f9f9f9; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     body {
       width: 100%;
       max-width: 964px;
@@ -53,20 +53,20 @@ body {
 /* Container */
 .container {
   padding: 0 15px; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .container {
       padding: 0 30px; } }
 
 /* Hide specific features on mobile and tablet */
 .mobile-hide {
   display: none; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .mobile-hide {
       display: block; } }
 
 .tablet-hide {
   display: block; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .tablet-hide {
       display: none; } }
 
@@ -137,7 +137,7 @@ img {
     margin-bottom: 15px; }
   img.card-thumb {
     margin-bottom: 15px; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     img.profile-picture {
       float: right;
       max-width: 40%; } }
@@ -170,7 +170,7 @@ img {
     .menu-toggle.clicked .hamburger-icon-line:nth-child(3) {
       margin-top: -3px;
       transform: rotate(-45deg); }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .menu-toggle {
       display: none; } }
 
@@ -181,7 +181,7 @@ img {
 /* Intro */
 .content-intro {
   margin: 25px 0 45px 0; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .content-intro {
       margin: 0 0 25px 0;
       padding-top: 45px;
@@ -193,7 +193,7 @@ img {
         padding-right: 10px;
         font-size: 20px;
         font-size: 1.3333333333rem; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     .content-intro {
       padding-top: 5px;
       padding-bottom: 60px;
@@ -206,7 +206,7 @@ img {
 /* Portfolio-card */
 .portfolio-card {
   margin-bottom: 10px; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .portfolio-card {
       padding-bottom: 25px;
       float: left;
@@ -217,7 +217,7 @@ img {
         margin-left: 6px; }
       .portfolio-card p {
         padding: 0 37px; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     .portfolio-card {
       max-width: calc((100% / 3) - 16px);
       margin-left: 8px;
@@ -230,7 +230,7 @@ img {
         transform: scale(1.01);
         background-color: #f9f9f9;
         box-shadow: 0 3px rgba(0, 0, 0, 0.1);
-        height: 100% !important; } }
+        height: 100%; } }
   .portfolio-card a {
     display: block;
     padding-bottom: 20px;
@@ -271,31 +271,31 @@ img {
 .main-nav {
   padding-top: 20px;
   padding-bottom: 20px; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .main-nav {
-      padding-top: 50px;
-      padding-bottom: 20px;
       display: flex;
       flex-direction: column;
+      padding-top: 50px;
+      padding-bottom: 20px;
       align-items: center; }
       .main-nav .student-name {
         margin-bottom: 25px; }
       .main-nav ul {
         display: flex; }
       .main-nav ul li {
-        justify-content: center;
-        background-color: transparent;
-        padding: 10px;
-        margin-left: 10px;
         margin-right: 10px;
-        margin-bottom: 0px; }
+        margin-bottom: 0;
+        margin-left: 10px;
+        padding: 10px;
+        background-color: transparent;
+        justify-content: center; }
       .main-nav a {
         display: inline; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     .main-nav {
-      justify-content: space-between;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       align-self: center; }
       .main-nav ul {
         margin-top: -18px; }
@@ -316,9 +316,6 @@ img {
     padding: 10px; }
   .main-nav a {
     display: block; }
-  @media screen and (max-width: 767px) {
-    .main-nav ul li {
-      background-color: #fff; } }
 
 /* Skills section */
 .skills-section {
@@ -326,7 +323,7 @@ img {
   padding-bottom: 55px;
   border-radius: 0;
   background-color: #eee; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .skills-section ul li {
       position: relative;
       left: 12.5%;
@@ -334,10 +331,11 @@ img {
       float: left;
       width: 25%;
       margin-bottom: 0; } }
-  @media screen and (min-width: 1024px) {
-    .skills-section ul li {
-      padding-top: 55px;
-      border-radius: 5px 5px 0 0; } }
+  @media screen and (min-width: 1025px) {
+    .skills-section {
+      border-radius: 5px 5px 0 0; }
+      .skills-section ul li {
+        padding-top: 55px; } }
   .skills-section ul li {
     padding: 0 20px; }
     .skills-section ul li:last-child {
@@ -367,13 +365,13 @@ img {
   padding-bottom: 30px;
   border-radius: 0;
   background-color: #fff; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .portfolio-section {
       padding-bottom: 5px; }
       .portfolio-section .container {
         padding-top: 45px;
         padding-bottom: 60px; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     .portfolio-section {
       padding-top: 55px;
       padding-right: 22px;
@@ -387,7 +385,7 @@ img {
 .contact-section {
   padding-top: 60px;
   padding-bottom: 60px; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .contact-section {
       padding-right: 110px;
       padding-left: 110px; }
@@ -401,7 +399,7 @@ img {
       .contact-section address {
         font-size: 20px;
         font-size: 1.3333333333rem; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     .contact-section {
       padding-right: 210px;
       padding-left: 210px; }
@@ -419,12 +417,12 @@ img {
   padding-top: 25px;
   padding-bottom: 25px;
   border-top: 1px solid #e1e1e1; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .footer-nav {
       padding-bottom: 85px; }
       .footer-nav ul li {
         margin-left: 30px; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     .footer-nav {
       padding-bottom: 25px; } }
   .footer-nav li,
@@ -438,7 +436,7 @@ img {
 	LAYOUT
 \* ============================== */
 /* COLUMNS =================== */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .row:before,
   .row:after {
     content: "";
